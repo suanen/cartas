@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="entrada">
+            <h1>Escolhas</h1>
+            <p>Digite seu nome:</p>
+            <input type="text" id="nome" placeholder="Seu nome aqui">
+            <button id="btnEntrar">Entrar</button>
+        </div>
+
+        <div id="jogo" style="display: none;">
+            <h2 id="saudacao"></h2>
+            <p>Cada vez que tiver uma dúvida e quiser minha ajuda, pergunte aqui e escolha uma das cartas:</p>
+            <p><i>Feche os olhos e faça a pergunta na sua mente</i></p>
+            <h3>Escolha uma das cartas:</h3>
+            <div class="cartas">
+                <img src="carta.png" class="carta" data-tipo="sim">
+                <img src="carta.png" class="carta" data-tipo="sim">
+                <img src="carta.png" class="carta" data-tipo="nao">
+                <img src="carta.png" class="carta" data-tipo="nao">
+                <img src="carta.png" class="carta" data-tipo="talvez">
+                <img src="carta.png" class="carta" data-tipo="talvez">
+            </div>
+            <button id="embaralhar">Embaralhe</button>
+            
+            <!-- Nova parte para escolher número -->
+            <p>Ou escolha um número de 1 a 50:</p>
+            <input type="number" id="numeroEscolhido" min="1" max="50">
+            <button id="btnEscolher">Escolher</button>
+            <div id="resultado"></div>
+        </div>
+
+        <footer>
+            <p>Este site foi criado por Suanen Correa, para alguém especial.</p>
+            <a href="https://open.spotify.com/playlist/1iiP9fpvy7j9iKjohQcppl?si=rwvwf1M2TUeyk1hmRD-Epg&pi=u-QbfCVJ-kRLeI&pt=5b87457704b11aa243ab4ae19e5390ee" target="_blank">
+                Escute esta playlist
+            </a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
